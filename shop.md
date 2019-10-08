@@ -19,6 +19,7 @@
 
 ***
 ##错误码列表
+
 |  错误码  | 说明 |
 |------ |----- |
 |   0   | 正确 |
@@ -277,41 +278,54 @@
             {
             	"code": 0,
             	"msg": "success",
-            	"data": {
-            		"current_page": 1, //当前页
-            		"data": [{ //数据,如果页数故意写很大,返回为空
-            			"order_id": 4, //订单id
-            			"order_sn": "201909307730330974",//订单号
-            			"uid": 9, //用户id
-            			"shop_id": 1, //商户id
-            			"paper_id": 2, //纸质id
-            			"printer_paper": "A4",//纸质类型
-            			"color_id": 1,//颜色id
-            			"printer_color": "单黑",//颜色类型
-            			"price": 8,//每张单价
-            			"num": 2,//打印分数
-            			"count_price": 16,//打印总价格(单价*文件页数*分数)
-            			"file_id": 95,//文件id
-            			"pdf_url": "http:\/\/file.szsxsoft.com\/data\/9\/201909282318045d8f79ac6e2c7.pdf",//打印文件地址
-            			"file_page": 1,//文件的页数
-            			"file_type": "pdf",//文件类型
-            			"print_status": 1,//打印状态
-            			"order_status": 1,//订单状态
-            			"add_time": "1970-01-01 08:00:00",//提交时间
-            			"print_time": null,//打印时间
-            			"pickup_code": null //取件码
-            		}],
-            		"first_page_url": "http:\/\/api.szsxsoft.com\/api\/prints\/shop\/printorder?page=1", //第一页地址(可忽略)
-            		"from": 1,
-            		"last_page": 1,//最后一页
-            		"last_page_url": "http:\/\/api.szsxsoft.com\/api\/prints\/shop\/printorder?page=1",//最后一页地址(可忽略)
-            		"next_page_url": null, //下一页地址(可忽略)
-            		"path": "http:\/\/api.szsxsoft.com\/api\/prints\/shop\/printorder",
-            		"per_page": "5", //页大小(等同size,可忽略)
-            		"prev_page_url": null,//前一页地址(可忽略)
-            		"to": 1, //下一页页数
-            		"total": 1 //共几页
-            	}
+            	"data": [{ //数据,如果页数故意写很大,返回为空
+                    "order_id": 4, //订单id
+                    "order_sn": "201909307730330974",//订单号
+                    "uid": 9, //用户id
+                    "shop_id": 1, //商户id
+                    "paper_id": 2, //纸质id
+                    "printer_paper": "A4",//纸质类型
+                    "color_id": 1,//颜色id
+                    "printer_color": "单黑",//颜色类型
+                    "price": 8,//每张单价
+                    "num": 2,//打印分数
+                    "count_price": 16,//打印总价格(单价*文件页数*分数)
+                    "file_id": 95,//文件id
+                    "pdf_url": "http:\/\/file.szsxsoft.com\/data\/9\/201909282318045d8f79ac6e2c7.pdf",//打印文件地址
+                    "file_page": 1,//文件的页数
+                    "file_type": "pdf",//文件类型
+                    "print_status": 1,//打印状态
+                    "order_status": 1,//订单状态
+                    "add_time": "1970-01-01 08:00:00",//提交时间
+                    "print_time": null,//打印时间
+                    "pickup_code": null, //取件码
+                    "user": {
+                        "uid": 12,
+                        "avatar": "https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/VxZg0q2ic9BUYiaRZFfXmYHLSCwOInM4yaExKqCJgy9ylxP2KLd6cAJc1cwjqF2EjoGxmjPWNhZUSfsmibfsVHSJg\/132",
+                        "is_vip": 0,
+                        "mini_openid": "opqua5fY-iizN3n67ytnEA",
+                        "nick_name": "李涛",
+                        "phone": null,
+                        "sex": 2,
+                        "user_name": null,
+                        "unionid": null,
+                        "vip_time": "1970-01-01"
+                    },
+                    "shop": {
+                        "shop_id": 1,
+                        "username": "szsxsoft",
+                        "shopname": "苏州书香科技公司",
+                        "shopimgurl": "http:\/\/api.szsxsoft.com\/uploads\/images\/shop\/shop.png",
+                        "phone": "15226585985",
+                        "address": "江苏省苏州市姑苏区公安分局",
+                        "reg_name": "店长小王",
+                        "is_vip": 0,
+                        "vip_time": 0,
+                        "reg_phone": "15265698569",
+                        "create_time": "2019-08-14"
+                    }
+                
+                 }]
             }
             
 > 打印状态: 0打印失败,1待打印,2打印完成
