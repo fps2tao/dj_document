@@ -97,20 +97,29 @@
                 "code": 0,
                 "msg": "success",
                 "data": {
-                    "shop_id": 3,
-                    "username": "sxsxsoft",
-                    "shopname": "水箱带你",
-                    "shopimgurl": "",
+                    "shop_id": 1,
+                    "username": "szsxsoft",
+                    "shopname": "苏州书香科技公司",
+                    "shopimgurl": "http:\/\/api.szsxsoft.com\/uploads\/images\/shop\/shop.png",
                     "phone": "15226585985",
-                    "address": "搜州市",
+                    "business_hours_id": 1,
+                    "address": "江苏省苏州市姑苏区公安分局",
                     "is_vip": 0,
                     "vip_time": 0,
                     "reg_name": "店长小王",
                     "reg_phone": "15265698569",
-                    "create_time": null
+                    "create_time": "2019-08-14",
+                    "bus_day": "周一~周五", //营业日期
+                    "bus_time": "09:00~18:00", //营业时间
+                    "price": { //价格
+                        "A4_black": "8.00",
+                        "A4_colour": "9.00",
+                        "A3_black": "10.00",
+                        "A3_colour": "11.00"
+                    }
                 }
             }
-
+> 请求例子: https://api.szsxsoft.com/api/prints/shop/getshop?shop_id=1
 ---
 
 * <span id="getshopreg">获取商家注册时信息</span>

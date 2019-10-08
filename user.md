@@ -6,7 +6,9 @@
 |[prints/user/upfile](#upfile)| 上传文件 |
 |[prints/user/fileinfo](#fileinfo)| 指定文件信息 |
 |[prints/shop/getshopnearby](#getshopnearby)| 获得附近商户信息|
-|[prints/user/printorder](#printorder)| 用户提交打印订单|
+|[prints/user/printorder](#printorder)| 用户打印订单列表|
+
+|[prints/user/printorder](#printorder)| 用户打印订单列表|
 
 
 
