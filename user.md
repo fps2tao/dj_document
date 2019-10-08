@@ -84,6 +84,7 @@
     * 请求示例：https://api.szsxsoft.com/api/prints/shop/getshopnearby
     * 接口备注：获取附近商户
     * 请求参数说明：
+    
         | 名称 | 类型 | 必填 |说明|
         |----- |------| ---- |----|
         |user_id |string|true|用户id(可不用)|
@@ -107,6 +108,7 @@
     * 请求示例：https://api.szsxsoft.com/api/prints/user/printorder
     * 接口备注：获取附近商户
     * 请求参数说明：
+    
         | 名称 | 类型 | 必填 |说明|
         |----- |------| ---- |----|
         |shop_id |string|true|商户id|
