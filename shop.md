@@ -36,6 +36,7 @@
     * 请求示例：https://api.szsxsoft.com/api/prints/shop/addshop
     * 接口备注：提交信息,添加商户的基本信息
     * 请求参数说明：
+    
         | 名称 | 类型 | 必填 |说明|
         |----- |------| ---- |----|
         |username |string|true|商户用户名|
@@ -118,6 +119,7 @@
     * 接口备注：获取商家注册时信息.
     
     * 请求参数说明：
+    
         | 名称 | 类型 | 必填 |说明|
         |----- |------| ---- |----|
         |ship_id |string|true|商户id|
@@ -164,6 +166,7 @@
     * 请求示例：https://api.szsxsoft.com/api/prints/shop/shoplogin
     * 接口备注：商户登录.
     * 请求参数说明：
+    
         | 名称 | 类型 | 必填 |说明|
         |----- |------| ---- |----|
         |username |string|true|商户用户名|
