@@ -297,18 +297,18 @@
                     "print_status": 1,//打印状态
                     "order_status": 1,//订单状态
                     "add_time": "1970-01-01 08:00:00",//提交时间
-                    "print_time": null,//打印时间
-                    "pickup_code": null, //取件码
+                    "print_time": "",//打印时间
+                    "pickup_code": "", //取件码
                     "user": {
                         "uid": 12,
                         "avatar": "https:\/\/wx.qlogo.cn\/mmopen\/vi_32\/VxZg0q2ic9BUYiaRZFfXmYHLSCwOInM4yaExKqCJgy9ylxP2KLd6cAJc1cwjqF2EjoGxmjPWNhZUSfsmibfsVHSJg\/132",
                         "is_vip": 0,
                         "mini_openid": "opqua5fY-iizN3n67ytnEA",
                         "nick_name": "李涛",
-                        "phone": null,
+                        "phone": "",
                         "sex": 2,
-                        "user_name": null,
-                        "unionid": null,
+                        "user_name": "",
+                        "unionid": "",
                         "vip_time": "1970-01-01"
                     },
                     "shop": {
