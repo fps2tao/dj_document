@@ -328,8 +328,9 @@
                  }]
             }
             
+> 请求例子:http://api.szsxsoft.com/api/prints/shop/printorder?shop_id=1&print_status=1
+        
 > 打印状态: 0打印失败,1待打印,2打印完成
-
 > 订单状态: 0未确认,1已确认,2未取件,3.已取件,4.取消订单
 ---
 
@@ -343,13 +344,16 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
     |order_sn |string|true|订单号|
     |print_status |string|true|打印状态|
         
     * JSON返回示例：
 
             {"code":1,"msg":"error","data":"更新失败"}
+
+> 请求例子: https://api.szsxsoft.com/api/prints/shop/printstatus?shop_id=1&order_sn=201910019069990675&print_status=2
+
 > 打印状态号:可以参考订单列表备注
 ---
 
@@ -371,6 +375,9 @@
     * JSON返回示例：
 
             {"code":1,"msg":"error","data":"更新失败"}
+
+> 请求例子: https://api.szsxsoft.com/api/prints/shop/orderstatus?shop_id=1&order_sn=201910019069990675&order_status=2
+
 > 订单状态号:可以参考订单列表备注
 ---
 
