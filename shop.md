@@ -300,9 +300,11 @@
                     "num": 2,//打印分数
                     "count_price": 16,//打印总价格(单价*文件页数*分数)
                     "file_id": 95,//文件id
+                    "file_name": "",//文件名
                     "pdf_url": "http:\/\/file.szsxsoft.com\/data\/9\/201909282318045d8f79ac6e2c7.pdf",//打印文件地址
                     "file_page": 1,//文件的页数
                     "file_type": "pdf",//文件类型
+                    "file_type_ico": "XXX.png",//真实上传的文件后缀及图标
                     "print_status": 1,//打印状态
                     "order_status": 1,//订单状态
                     "add_time": "1970-01-01 08:00:00",//提交时间
