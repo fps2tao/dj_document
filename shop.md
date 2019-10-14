@@ -300,7 +300,7 @@
                     "num": 2,//打印分数
                     "count_price": 16,//打印总价格(单价*文件页数*分数)
                     "file_id": 95,//文件id
-                    "file_name": "",//文件名
+                    "file_title": "",//文件名
                     "pdf_url": "http:\/\/file.szsxsoft.com\/data\/9\/201909282318045d8f79ac6e2c7.pdf",//打印文件地址
                     "file_page": 1,//文件的页数
                     "file_type": "pdf",//文件类型
