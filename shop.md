@@ -35,9 +35,9 @@
 ## 接口详情
 
 
-* <span id = "regshop">添加商户</span>
+* <span id = "regshop">简单注册商户</span>
     * 请求示例：https://api.szsxsoft.com/api/prints/shop/regshop
-    * 接口备注：提交信息,添加商户的基本信息
+    * 接口备注：提交信息,简单注册商户
     * 请求参数说明：
     
         | 名称 | 类型 | 必填 |说明|
