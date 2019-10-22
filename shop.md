@@ -3,6 +3,7 @@
 
 |  接口  | 说明 |
 |------ |----- |
+|[prints/shop/regshop](#regshop)| 简单注册商户|
 |[prints/shop/addshop](#addshop)| 添加商户|
 |[prints/shop/getshop](#getshop)| 获取商户基本信息|
 |[prints/shop/getshopreg](#getshopreg)| 获取商家注册时信息|
@@ -32,6 +33,29 @@
 
 
 ## 接口详情
+
+
+* <span id = "regshop">添加商户</span>
+    * 请求示例：https://api.szsxsoft.com/api/prints/shop/regshop
+    * 接口备注：提交信息,添加商户的基本信息
+    * 请求参数说明：
+    
+        | 名称 | 类型 | 必填 |说明|
+        |----- |------| ---- |----|
+        |username |string|true|商户用户名|
+        |password | string |true|商户登录密码|
+        |shopname | string |false|商户名称(可选)|
+        |latitude | string |false|经度(可选)|
+        |longitude | string |false|纬度(可选)|
+
+    * JSON返回示例：
+  
+            {
+                "code": 0,
+                "msg": "success",
+                "data": "注册成功"
+            }
+---
 
 * <span id = "addshop">添加商户</span>
     * 请求示例：https://api.szsxsoft.com/api/prints/shop/addshop
