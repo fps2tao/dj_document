@@ -258,7 +258,6 @@
     |A3_black | string |true|A3单黑价格|
     |A3_colour | string |true|A3彩色价格|
     |phone | string |true|负责人手机号|
-    |business_hours_id|int |true|营业周期id(外键)|
     |start_week | string |true|开始营业周期|
     |end_week | string |true|结束营业周期|
     |start_time | string |true|开始营业时间|
