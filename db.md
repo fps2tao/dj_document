@@ -91,6 +91,7 @@ print_color | tinyint | 打印颜色
 print_num | int | 打印份数
 add_time | int | 上传时间
 is_del | tinyint | 是否删除
+status | tinyint | 0处理中1处理成功2处理失败
 > 程序会统一,把上传的文件转化成pdf进行打印
 
 ##### 8.打印订单表 (print_order)
