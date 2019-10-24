@@ -113,6 +113,7 @@ count_price | tinyint | 打印总价
 file_id | tinyint | 打印文件id
 pdf_url | varchar | 打印url
 file_page | int | 打印文件页数
+original_file_type| varchar | 原始文件类型
 file_type| varchar | 打印文件类型(pdf)
 print_status | tinyint | 打印状态 0打印失败,1待打印,2打印完成
 order_status | tinyint | 0未确认,1已确认,2未取件,3.已取件,4.取消订单
