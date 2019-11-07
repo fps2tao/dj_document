@@ -17,6 +17,7 @@
 |[prints/shop/delblack](#delblack)| 用户移除黑名单 |
 |[prints/shop/getblack](#getblack)| 查询一个用户是否在黑名单 |
 |[prints/shop/blacklist](#blacklist)| 黑名单列表 |
+|[prints/shop/printlog](#printlog)| 打印日志列表 |
 
 ***
 ##错误码列表
@@ -497,10 +498,25 @@
     * JSON返回示例：
     
 
-> 未写
+> .
 --- 
 
+ * <span id = "printlog">打印日志列表</span>
 
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/printlog
+    
+    * 接口备注：打印日志列表.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+
+    * JSON返回示例：
+    
+
+> .
+--- 
 
 
 
