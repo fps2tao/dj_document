@@ -18,6 +18,7 @@
 |[prints/shop/getblack](#getblack)| 查询一个用户是否在黑名单 |
 |[prints/shop/blacklist](#blacklist)| 黑名单列表 |
 |[prints/shop/printlog](#printlog)| 打印日志列表 |
+|[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
 
 ***
 ##错误码列表
@@ -511,6 +512,7 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
+    |ship_id |string|true|商户id|
 
     * JSON返回示例：
     
@@ -518,5 +520,27 @@
 > .
 --- 
 
+ * <span id = "iscompleted">判断商户是否完善信息</span>
 
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/iscompleted
+    
+    * 接口备注：判断商户是否完善信息.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    |ship_id |string|true|商户id|
+
+    * JSON返回示例：
+    
+            {
+                "code": 1,
+                "msg": "error",
+                "data": "商户信息未完善"
+            }
+    
+
+> 例子: http://api.szsxsoft.com/api/prints/shop/iscompleted?shop_id=10
+--- 
 
