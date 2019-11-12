@@ -563,11 +563,15 @@
  
    * JSON返回示例：
       
-    {
-        "code": 0,
-        "msg": "success",
-        "data": "https:\/\/api.szsxsoft.com\/prints\/shop\/paycode?code_url=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DsTz2Ga6"
-    }
+            {
+                "code": 0,
+                "msg": "success",
+                "data": {
+                    "vip_name": "测试shopvip商品",
+                    "pay_amount": "0.01",
+                    "qrcode": "https:\/\/api.szsxsoft.com\/prints\/shop\/paycode?code_url=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DXhoPU19"
+                }
+            }
     
 > 备注: [vip_type=1]测试类型付款0.01元, [vip_type=2]真实付款298.00。
    data里面为二维码地址,有效期2小时.   
