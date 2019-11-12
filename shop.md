@@ -559,7 +559,7 @@
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
     |ship_id |string|true|商户id|
-    |vip_type |string|true|vip类型|
+    |type |string|true|vip类型|
  
    * JSON返回示例：
       
@@ -573,9 +573,9 @@
                 }
             }
     
-> 备注: [vip_type=1]测试类型付款0.01元, [vip_type=2]真实付款298.00。
+> 备注: [type=1]测试类型付款0.01元, [type=2]真实付款298.00。
    data里面为二维码地址,有效期2小时.   
 
-> 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&vip_type=1
+> 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&type=1
 --- 
 
