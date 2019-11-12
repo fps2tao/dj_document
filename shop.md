@@ -19,6 +19,9 @@
 |[prints/shop/blacklist](#blacklist)| 黑名单列表 |
 |[prints/shop/printlog](#printlog)| 打印日志列表 |
 |[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
+|[prints/shop/pay](#pay)| 商户支付 |
+
+
 
 ***
 ##错误码列表
@@ -542,5 +545,33 @@
     
 
 > 例子: http://api.szsxsoft.com/api/prints/shop/iscompleted?shop_id=10
+--- 
+
+
+ * <span id = "pay">商户支付</span>
+
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/pay
+    
+    * 接口备注：商户支付.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    |ship_id |string|true|商户id|
+    |vip_type |string|true|vip类型|
+ 
+   * JSON返回示例：
+      
+    {
+        "code": 0,
+        "msg": "success",
+        "data": "https:\/\/api.szsxsoft.com\/prints\/shop\/paycode?code_url=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DsTz2Ga6"
+    }
+    
+> 备注: [vip_type=1]测试类型付款0.01元, [vip_type=2]真实付款298.00
+   data里面为二维码地址,有效期2小时.   
+
+> 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&vip_type=1
 --- 
 
