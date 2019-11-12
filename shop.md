@@ -569,7 +569,7 @@
         "data": "https:\/\/api.szsxsoft.com\/prints\/shop\/paycode?code_url=weixin%3A%2F%2Fwxpay%2Fbizpayurl%3Fpr%3DsTz2Ga6"
     }
     
-> 备注: [vip_type=1]测试类型付款0.01元, [vip_type=2]真实付款298.00
+> 备注: [vip_type=1]测试类型付款0.01元, [vip_type=2]真实付款298.00。
    data里面为二维码地址,有效期2小时.   
 
 > 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&vip_type=1
