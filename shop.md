@@ -20,7 +20,7 @@
 |[prints/shop/printlog](#printlog)| 打印日志列表 |
 |[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
 |[prints/shop/pay](#pay)| 商户支付 |
-
+|[prints/shop/upshopimg](#upshopimg)| 更新商户图像 |
 
 
 ***
@@ -407,7 +407,7 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
     |order_sn |string|true|订单号|
     |order_status |string|true|订单状态|
         
@@ -431,7 +431,7 @@
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
     |user_id |string|true|用户id|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
         
     * JSON返回示例：
 
@@ -450,7 +450,7 @@
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
     |user_id |string|true|用户id|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
         
     * JSON返回示例：
 
@@ -469,7 +469,7 @@
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
     |user_id |string|true|用户id|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
         
     * JSON返回示例：
 
@@ -515,7 +515,7 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
 
     * JSON返回示例：
     
@@ -533,7 +533,7 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
 
     * JSON返回示例：
     
@@ -558,7 +558,7 @@
     
     | 名称 | 类型 | 必填 |说明|
     |----- |------| ---- |----|
-    |ship_id |string|true|商户id|
+    |shop_id |string|true|商户id|
     |type |string|true|vip类型|
  
    * JSON返回示例：
@@ -577,5 +577,31 @@
    data里面为二维码地址,有效期2小时.   
 
 > 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&type=1
+--- 
+
+
+
+ * <span id = "upshopimg">更新商户图像</span>
+
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/upshopimg
+    
+    * 接口备注：更新商户图像.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    |shop_id |string|true|商户id|
+    |shop_img |file|true|商家头像|
+ 
+   * JSON返回示例：
+      
+            {
+                "code": 0,
+                "msg": "success",
+                "data": "更新图像成功!"
+            }
+    
+> 例子:POST http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&shop_img=
 --- 
 
