@@ -9,7 +9,8 @@
 |[prints/user/printorder](#printorder)| 用户打印订单列表|
 |[prints/user/getorder](#getorder)| 用户获得订单详情|
 |[prints/user/delorder](#delorder)| 用户删除|
-
+|[prints/user/addfavoriteshop](#addfavoriteshop)| 收藏商家|
+|[prints/user/delfavoriteshop](#delfavoriteshop)| 移除收藏|
 
 ***
 ## 错误码列表
@@ -191,5 +192,45 @@
                 "code": 0,
                 "msg": "success",
                 "data": "删除成功"
+            }
+---
+
+* <span id = "addfavoriteshop">收藏商家</span>
+
+    * 请求示例：https://api.szsxsoft.com/api/prints/user/addfavoriteshop
+    * 接口备注：收藏商家
+    * 请求参数说明：
+    
+        | 名称 | 类型 | 必填 |说明|
+        |----- |------| ---- |----|
+        |user_id | string |true|用户id|
+        |shop_id | string |true|商家id|
+
+    * JSON返回示例：
+  
+            {
+                "code": 0,
+                "msg": "success",
+                "data": "收藏成功"
+            }
+---
+
+* <span id = "delfavoriteshop">删除收藏商家</span>
+
+    * 请求示例：https://api.szsxsoft.com/api/prints/user/delfavoriteshop
+    * 接口备注：删除收藏商家
+    * 请求参数说明：
+    
+        | 名称 | 类型 | 必填 |说明|
+        |----- |------| ---- |----|
+        |user_id | string |true|用户id|
+        |shop_id | string |true|商家id|
+
+    * JSON返回示例：
+  
+            {
+                "code": 0,
+                "msg": "success",
+                "data": "移除收藏成功"
             }
 ---
