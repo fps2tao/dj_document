@@ -21,6 +21,7 @@
 |[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
 |[prints/shop/pay](#pay)| 商户支付 |
 |[prints/shop/upshopimg](#upshopimg)| 更新商户图像 |
+|[prints/shop/shoptype](#shoptype)| 商家分类 |
 
 
 ***
@@ -605,3 +606,75 @@
 > 例子:POST http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&shop_img=
 --- 
 
+ * <span id = "shoptype">商家分类/span>
+
+     * 请求示例：http://api.szsxsoft.com/api/prints/shop/shoptype
+    
+    * 接口备注：商家分类.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    | ||||
+    | ||||
+ 
+   * JSON返回示例：
+      
+            {
+                "code": 0,
+                "msg": "success",
+                "data": [{
+                    "id": 1,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": null,
+                    "type_name": "文印|广告",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 2,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": null,
+                    "type_name": "中介|维修",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 3,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": null,
+                    "type_name": "酒店|公司",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 4,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": null,
+                    "type_name": "超时|商店",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 5,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": null,
+                    "type_name": "银行|政府",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 6,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": "person",
+                    "type_name": "个人|家庭",
+                    "sort": 1,
+                    "isshow": 1
+                }, {
+                    "id": 7,
+                    "type_ico": "icon_tabbar.png",
+                    "type_alias": "other",
+                    "type_name": "其他",
+                    "sort": 1,
+                    "isshow": 1
+                }]
+            }
+    
+> 例子:http://api.szsxsoft.com/api/prints/shop/shoptype
+--- 
