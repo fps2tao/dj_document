@@ -134,6 +134,15 @@ add_time | int | 添加时间
 
 
 
+##### 10.商家分类 (shop_type)
+字段名 | 字段类型 | 字段描述
+--- | --- | ---
+id | int | 自增id
+type_ico | varchar | 分类图标
+type_alias | varchar | 分类别名
+type_name | varchar | 分类名称
+sort | int | 排序
+isshow | tinyint | 是否显示1显示0不显示（默认1）
 
 
 
