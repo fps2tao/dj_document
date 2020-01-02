@@ -20,7 +20,7 @@
 |[prints/shop/printlog](#printlog)| 打印日志列表 |
 |[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
 |[prints/shop/pay](#pay)| 商户支付 |
-
+|[prints/shop/online](#online)| 设置商家是否在线 |
 
 
 ***
@@ -577,5 +577,29 @@
    data里面为二维码地址,有效期2小时.   
 
 > 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&type=1
+--- 
+
+
+ * <span id = "online">设置商家在线</span>
+
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/online
+    
+    * 接口备注：设置商家在线.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    |ship_id |string|true|商户id|
+    |is_online |int|true|是否在线|
+ 
+   * JSON返回示例：
+      
+            {"code":0,"msg":"success","data":""}
+    
+> 备注: [is_online=1]在线, [type=0]不在线
+
+
+> 例子: http://api.szsxsoft.com/api/prints/shop/online?shop_id=46&is_online=1
 --- 
 
