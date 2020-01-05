@@ -307,7 +307,7 @@
     |shop_id |string|ture|商家id|
     |keywords |string|false| 可查 订单号,取件码(可不传)|
     |order_id |int|1| 订单id(如果传,表示查大于order_id的所有记录)||  
-    |print_status |int|1| 打印状态(可不传)||
+    |print_status |int|1| 打印状态(可不传,默认1)||
     |order_status |int|1| 订单状态(可不传)||
     |page |string|1| 当前页(可不传)||
     |size |string|5| 当前页数据量(可不传)||
