@@ -20,6 +20,7 @@
 |[prints/shop/printlog](#printlog)| 打印日志列表 |
 |[prints/shop/iscompleted](#iscompleted)| 判断商户是否完善信息 |
 |[prints/shop/pay](#pay)| 商户支付 |
+|[prints/shop/payingstatus](#payingstatus)| 商户支付状态 |
 |[prints/shop/upshopimg](#upshopimg)| 更新商户图像 |
 |[prints/shop/shoptype](#shoptype)| 商家分类 |
 |[prints/shop/online](#online)| 设置商家是否在线 |
@@ -580,6 +581,39 @@
 
 > 例子: http://api.szsxsoft.com/api/prints/shop/pay?shop_id=1&type=1
 --- 
+
+
+ * <span id = "payingstatus">商户支付状态</span>
+
+     * 请求示例：https://api.szsxsoft.com/api/prints/shop/payingstatus
+    
+    * 接口备注：商户支付状态.
+    
+    * 请求参数说明：
+    
+    | 名称 | 类型 | 必填 |说明|
+    |----- |------| ---- |----|
+    |shop_id |string|true|商户id|
+   
+ 
+   * JSON返回示例：
+      
+    {
+        "code": 0,
+        "msg": "success",
+        "data": {
+            "shop_id": 4,
+            "is_vip": 0,
+            "vip_time": "",
+            "paying_status": 1,
+            "create_time": "2020-04-11 15:08:34"
+        }
+    }
+    
+> 备注: paying_status:1表示支付中, 2表示支付成功 (没有其他状态了,用户取消好像检测不到)
+> 例子: https://api.szsxsoft.com/api/prints/shop/payingstatus?shop_id=4
+--- 
+
 
 
  * <span id = "upshopimg">更新商户图像</span>
